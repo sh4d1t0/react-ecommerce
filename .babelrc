@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["@babel/env", { "corejs": 3.21, "useBuiltIns": "usage" }],
+    ["@babel/react", { "runtime": "automatic" }],
+    "@babel/preset-typescript",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]"
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-twin", "babel-plugin-macros"]
+}
