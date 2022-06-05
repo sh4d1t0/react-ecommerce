@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './styles/global.css'
 import GlobalStyles from './styles/GlobalStyles'
 import App from './App'
@@ -22,6 +22,7 @@ root.render(
         <Route path="products" element={<Products />} />
         <Route path="cart" element={<Cart />} />
       </Routes>
+      <Link to="Products">Products</Link>
     </BrowserRouter>
   </React.StrictMode>
 )
