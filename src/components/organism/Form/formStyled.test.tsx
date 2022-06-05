@@ -17,7 +17,7 @@ const { EmptyForm } = composeStories(stories)
 describe('Input render with props', () => {
   it('should render input', () => {
     render(<EmptyForm />)
-    const formElement = screen.getByTestId('firstName')
+    const formElement = screen.getByTestId('email')
     expect(formElement).toMatchSnapshot()
   })
 })

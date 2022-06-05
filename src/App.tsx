@@ -1,42 +1,17 @@
-import * as React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './Home'
+import React from 'react'
+import tw, { styled } from 'twin.macro'
+import logo from './images/logo.svg'
 
-function App() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="login" element={<LogIn />} />
-        <Route path="products" element={<Products />} />
-        <Route path="cart" element={<Cart />} />
-      </Routes>
-    </div>
-  )
-}
+const Container = styled.div`
+  ${tw`text-3xl text-center font-bold text-gray-900 underline`}
+`
 
-function LogIn() {
+const App = () => {
   return (
-    <>
-      <h1>Login Page</h1>
-    </>
-  )
-}
-
-function Products() {
-  return (
-    <>
-      <h1>Products Page</h1>
-    </>
-  )
-}
-
-function Cart() {
-  return (
-    <>
-      <h1>Cart Shoping Page</h1>
-    </>
+    <Container>
+      <h1>Proyecto e-Commerce creado en React y TypeScript</h1>
+      <img src={logo} className="AppLogo" alt="logo" />
+    </Container>
   )
 }
 

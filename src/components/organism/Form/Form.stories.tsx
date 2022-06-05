@@ -20,9 +20,6 @@ export const EmptyForm = Template.bind({})
 export const FilledForm = Template.bind({})
 FilledForm.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement)
-  await userEvent.type(canvas.getByTestId('firstName'), 'My name', {
-    delay: 100,
-  })
   await userEvent.type(canvas.getByTestId('email'), 'hi@example.com', {
     delay: 100,
   })

@@ -6,6 +6,7 @@ export const StyledButton = styled.button(({ variant, size }: IButtonProps) => [
     rounded-full
     focus:outline-none
     focus:ring
+    w-full
   `,
   variant === 'contained'
     ? tw`text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-600 focus:bg-blue-600/90`

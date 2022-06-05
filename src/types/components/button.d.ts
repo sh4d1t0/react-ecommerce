@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import React from 'react'
 
 export interface IButtonProps {
   variant?: 'text' | 'contained' | 'outlined'
@@ -8,5 +8,5 @@ export interface IButtonProps {
   textColor?: string
   onClick?: () => void
   disabled?: boolean
-  children: ReactNode
+  children: React.ReactNode
 }
