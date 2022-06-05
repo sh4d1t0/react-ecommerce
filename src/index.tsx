@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter>
       <GlobalStyles />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Login />} />
         <Route path="home" element={<App />} />
         <Route path="login" element={<Login />} />
         <Route path="products" element={<Products />} />
