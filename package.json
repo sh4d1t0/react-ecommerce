@@ -7,7 +7,7 @@
       "preset": "emotion"
     }
   },
-  "homepage": "https://sh4d1t0.github.io/react-ecommerce/",
+  "homepage": "https://sh4d1t0.github.io/react-ecommerce",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
