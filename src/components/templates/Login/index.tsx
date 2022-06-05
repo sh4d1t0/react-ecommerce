@@ -1,7 +1,22 @@
-import * as React from 'react'
+import React, { ChangeEvent, FormEvent, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Form } from '../../organism/Form'
 
 export const Login = () => {
+  const [state, setState] = useState({ value: '' })
+  const navigate = useNavigate()
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log(state.value)
+    setState({ value: event?.currentTarget?.value })
+  }
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log('Submitted')
+    navigate('/products')
+  }
+
   return (
     <>
       <div className="flex h-screen justify-center">
@@ -29,7 +44,7 @@ export const Login = () => {
               Entrar al sistema
             </h2>
             <div className="mt-8">
-              <Form />
+              <Form onSubmit={handleSubmit} onChange={handleChange} />
             </div>
           </div>
         </div>
