@@ -7,7 +7,10 @@
       "preset": "emotion"
     }
   },
+  "homepage": "https://sh4d1t0.github.io/react-ecommerce",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
     "build": "webpack --config config/webpack.prod.js",
     "dev": "webpack serve --config config/webpack.dev.js",
     "test": "jest",
@@ -75,6 +78,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-testing-library": "^5.5.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
     "jest": "^27.4.6",
