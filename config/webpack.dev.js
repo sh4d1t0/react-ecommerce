@@ -36,8 +36,8 @@ const devConfig = {
         warnings: true,
       }, // overlay with errors and/or warnings
     },
-    hot: true,
     historyApiFallback: true,
+    hot: true,
   },
   plugins: [new ReactRefreshWebpackPlugin()],
   devtool: 'eval-source-map',

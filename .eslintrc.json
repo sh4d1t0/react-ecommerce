@@ -40,6 +40,7 @@
       { "singleQuote": true, "semi": false, "arrowParens": "avoid" }
     ],
     "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "testing-library/no-node-access": "off"
   }

@@ -1,7 +1,7 @@
 {
   "presets": [
-    ["@babel/env", { "corejs": 3.21, "useBuiltIns": "usage" }],
-    ["@babel/react", { "runtime": "automatic" }],
+    "@babel/preset-env",
+    ["@babel/preset-react", { "runtime": "automatic" }],
     "@babel/preset-typescript",
     [
       "@emotion/babel-preset-css-prop",
