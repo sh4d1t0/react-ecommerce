@@ -12,6 +12,7 @@ export function Input({
   variant,
   disabled,
   onChange,
+  required,
 }: IInputProps) {
   return (
     <StyledInput
@@ -26,6 +27,7 @@ export function Input({
       disabled={disabled}
       className={className}
       onChange={onChange}
+      required={required}
     />
   )
 }

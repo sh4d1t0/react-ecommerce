@@ -16,6 +16,7 @@ export const Form = ({ onChange, onSubmit }: IForm) => {
           type="email"
           id="email"
           name="email"
+          required={true}
           onChange={onChange}
         />
       </div>
@@ -25,6 +26,7 @@ export const Form = ({ onChange, onSubmit }: IForm) => {
           type="password"
           id="password"
           name="password"
+          required={true}
           onChange={onChange}
         />
       </div>

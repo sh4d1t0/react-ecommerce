@@ -17,6 +17,7 @@ export interface IInputProps {
   variant?: 'outlined' | 'filled' | 'standard'
   disabled?: boolean
   onChange?: () => void
+  required?: boolean
 }
 
 export interface IInputLabelProps extends IInputProps {

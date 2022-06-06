@@ -11,6 +11,7 @@ export const InputLabel = ({
   label,
   disabled,
   onChange,
+  required,
 }: IInputLabelProps) => {
   return (
     <div className="relative">
@@ -24,6 +25,7 @@ export const InputLabel = ({
         className="peer"
         disabled={disabled}
         onChange={onChange}
+        required={required}
       />
       <Label
         htmlFor={id}
